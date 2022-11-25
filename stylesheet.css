@@ -1,0 +1,68 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/bgIndex.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+}
+img {
+  width: 300px;
+  height: 100%;
+}
+.container {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c c c";
+}
+.left {
+  grid-area: a;
+  transition-duration: 0.2s;
+}
+.mid {
+  grid-area: b;
+  transition-duration: 0.2s;
+}
+.right {
+  grid-area: c;
+  transition-duration: 0.2s;
+}
+.btn {
+  filter: grayscale(100%);
+  transition-duration: 0.2s;
+}
+.btn:hover {
+  filter: grayscale(0%);
+}
+.left:hover {
+  transform: scale(1.2);
+}
+.mid:hover {
+  transform: scale(1.2);
+}
+.right:hover {
+  transform: scale(1.2);
+}
+@media (min-width: 919px) {
+  .container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas:
+      "a b c"
+      "a b c"
+      "a b c";
+  }
+  img {
+    width: 400px;
+    height: 100%;
+  }
+}
+
+/* Validerat 221113 */

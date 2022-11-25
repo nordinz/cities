@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CITIES</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  </head>
+  <body>
+    <header class="headerClass" id="header">
+      <nav class="nav">
+        <a href="#" class="logo">CITIES</a>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+          <a href="rickAndMorty.html">rick and morty</a>
+          <a href="starwars.html">starwars</a>
+          <a href="index.html">home</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-grid">
+      <div id="top-logo"><img src="img/cities.png" alt="" /></div>
+      <div id="cities" class="city-list-container">
+        <ul class="city-list"></ul>
+      </div>
+
+      <div id="form-container" class="form-container">
+        <form>
+          <div class="post">
+            <div class="hide">
+              <label>ID</label>
+              <input type="text" id="city-id" />
+            </div>
+
+            <div>
+              <label>City Name</label>
+              <input type="text" id="city-name" />
+            </div>
+
+            <div>
+              <label>Population</label>
+              <input type="number" id="city-population" />
+            </div>
+            <div class="btn-div">
+              <button id="post-button" class="btn">POST</button>
+              <button id="patch-button" class="btn">PATCH</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="city-info" class="city-info"></div>
+
+      <div id="chart-container">
+        <div class="chart">
+          <canvas id="myChart"> </canvas>
+        </div>
+      </div>
+    </main>
+
+    <script src="form.js"></script>
+  </body>
+</html>
+
+<!-- Validated 221113 -->
